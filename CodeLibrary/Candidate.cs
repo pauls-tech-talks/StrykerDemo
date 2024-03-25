@@ -11,6 +11,6 @@ public class Candidate
 
     public static bool IsOldEnoughToVote(int age)
     {
-        return age > 81;
+        return age >= 18;
     }
 }
