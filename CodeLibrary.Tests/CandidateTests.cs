@@ -29,4 +29,18 @@ public class CandidateTests
         // Assert
         sut.CanVote.Should().BeFalse();
     }
+
+
+    [Fact]
+    public void CanVote_MinimumAcceptedAge_ReturnsTrue()
+    {
+        // Arrange
+        var age = 18;
+
+        // Act
+        var sut = new Candidate(age);
+
+        // Assert
+        sut.CanVote.Should().BeTrue();
+    }
 }
