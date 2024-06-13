@@ -1,8 +1,8 @@
 ﻿namespace CodeLibrary;
 
-public class Candidate
+public class Person
 {
-    public Candidate(int age)
+    public Person(int age)
     {
         CanVote = IsOldEnoughToVote(age);
     }
