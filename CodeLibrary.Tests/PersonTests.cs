@@ -38,7 +38,7 @@ public class PersonTests
         var age = 18;
 
         // Act
-        var sut = new Candidate(age);
+        var sut = new Person(age);
 
         // Assert
         sut.CanVote.Should().BeTrue();
