@@ -7,11 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeLibrary", "CodeLibrary\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{93471FC1-FD59-4778-A32C-57E3F8B08740}"
 	ProjectSection(SolutionItems) = preProject
-		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeLibrary.Tests", "CodeLibrary.Tests\CodeLibrary.Tests.csproj", "{73C69443-4666-4C95-9E55-AFE6325D077F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeLibrary.Tests", "CodeLibrary.Tests\CodeLibrary.Tests.csproj", "{73C69443-4666-4C95-9E55-AFE6325D077F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

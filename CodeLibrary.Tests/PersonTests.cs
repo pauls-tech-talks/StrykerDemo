@@ -2,16 +2,16 @@ using FluentAssertions;
 
 namespace CodeLibrary.Tests;
 
-public class CandidateTests
+public class PersonTests
 {
     [Fact]
-    public void Constructor_WhenCalled_DoesNotError()
+    public void Person_WhenNewed_DoesNotError()
     {
         // Arrange
-        var age = 18;
+        var age = 54;
 
         // Act
-        var act = () => new Candidate(age);
+        var act = () => new Person(age);
 
         // Assert
         act.Should().NotThrow();
@@ -24,7 +24,7 @@ public class CandidateTests
         var age = 5;
 
         // Act
-        var sut = new Candidate(age);
+        var sut = new Person(age);
 
         // Assert
         sut.CanVote.Should().BeFalse();
