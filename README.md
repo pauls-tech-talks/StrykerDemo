@@ -43,7 +43,7 @@ public class Person
 
     public static bool IsOldEnoughToVote(int age)
     {
-        return age > 81;
+        return age > 18;
     }
 }
 ```
@@ -54,7 +54,7 @@ public class Person
 public void Person_WhenNewed_DoesNotError()
 {
     // Arrange
-    var age = 54;
+    var age = 0;
 
     // Act
     var act = () => new Person(age);
