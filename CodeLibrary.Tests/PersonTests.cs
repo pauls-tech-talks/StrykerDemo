@@ -8,7 +8,7 @@ public class PersonTests
     public void Person_WhenNewed_DoesNotError()
     {
         // Arrange
-        var age = 54;
+        var age = 0;
 
         // Act
         var act = () => new Person(age);
