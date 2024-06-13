@@ -31,9 +31,9 @@ Turns out there's two big problems with using test coverage (alone):
 ### Example Code
 Here is some example code. It is highly over-simplified for legibility.
 ``` csharp
-public class Candidate
+public class Person
 {
-    public Candidate(int age)
+    public Person(int age)
     {
         CanVote = IsOldEnoughToVote(age);
         Console.WriteLine("can vote?, {0}", CanVote);
@@ -51,13 +51,13 @@ public class Candidate
 ### Generic Test
 ``` csharp
 [Fact]
-public void Candidate_WhenNewed_DoesNotError()
+public void Person_WhenNewed_DoesNotError()
 {
     // Arrange
-    var age = 18;
+    var age = 54;
 
     // Act
-    var act = () => new Candidate(age);
+    var act = () => new Person(age);
 
     // Assert
     act.Should().NotThrow();

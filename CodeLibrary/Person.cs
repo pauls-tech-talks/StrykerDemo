@@ -1,11 +1,11 @@
 ﻿namespace CodeLibrary;
 
-public class Candidate
+public class Person
 {
-    public Candidate(int age)
+    public Person(int age)
     {
         CanVote = IsOldEnoughToVote(age);
-        Console.WriteLine("can vote?, {0}", CanVote);
+        Console.WriteLine("can vote?, {0}", CanVote);                                                   
     }
 
     public bool CanVote { get; }
