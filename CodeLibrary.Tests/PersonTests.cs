@@ -1,5 +1,3 @@
-using FluentAssertions;
-
 namespace CodeLibrary.Tests;
 
 public class PersonTests
